@@ -4,11 +4,16 @@ game 'gta5'
 
 author 'TasoAGC'
 description 'A FiveM integration of the SimpleNotification.js library'
-version '1.0.0'
+version '1.3.0'
 
 client_scripts {
     'config.lua',
-    'main.lua'
+    'main.lua',
+    'depreciated.lua'
+}
+
+server_script {
+    'update.lua'
 }
 
 ui_page('nui/main.html')
@@ -25,5 +30,9 @@ files {
 exports {
     'SendTextAlert',
     'SendAny',
-    'SendImage'
+    'SendImage',
+    'Alert',
+    'Custom',
+    'Image',
+    'Persist'
 }
